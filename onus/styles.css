@@ -137,3 +137,41 @@ margin-top: 10px;
 .blinking {
   animation: blink 1s infinite;
 }
+
+
+.social-icons {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.social-icons a {
+  display: inline-block;
+  margin: 0 10px;
+  text-decoration: none;
+  color: #333;
+  font-size: 24px;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #007bff;
+}
+
+.social-icon {
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+.blinking {
+  animation: blinkingText 1.2s infinite;
+}
+
+@keyframes blinkingText {
+  0% { color: #ff0000; }
+  49% { color: #ff0000; }
+  60% { color: transparent; }
+  99% { color: transparent; }
+  100% { color: #ff0000; }
+}
